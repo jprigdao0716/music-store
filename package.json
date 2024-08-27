@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@quasar/extras": "^1.16.12",
+    "axios": "^1.7.5",
+    "quasar": "^2.16.9",
+    "vuex": "^4.0.2"
+  }
+}
