@@ -1,1 +1,11 @@
 /* app global css */
+/* global.css */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('src/assets/lespaul.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Optional: set a default font */
+  }
+  
