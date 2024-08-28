@@ -120,4 +120,18 @@ export default {};
         opacity: 1;
       }
     }
+
+      @media (max-width: 600px) {
+    .text-h3{
+   
+     display: none;
+
+  }
+
+  .animated-text{
+    margin-top: 10rem;
+  }
+}
+
+  
 </style>
