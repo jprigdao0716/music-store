@@ -1,5 +1,5 @@
 <template>
-  <q-page padding style="background-color: aliceblue;">
+  <q-page padding>
     <q-card class="my-card">
       <div v-if="addToCartMessage" class="add-to-cart-message" style="background-color: bisque; padding: 15px;">
             {{ addToCartMessage }}
@@ -140,6 +140,17 @@ export default {
 </script>
 
 <style scoped>
+
+.q-page {
+    background-color: aliceblue;
+    /* background: url(/src/assets/lespaul.jpg) no-repeat center center fixed; */
+    background-size: cover;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .my-card {
   max-width: 600px;
   margin: auto;
