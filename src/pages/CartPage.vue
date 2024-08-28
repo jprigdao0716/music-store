@@ -86,7 +86,8 @@ export default {
 }
 
 .remove-btn {
-  border-radius: 20px;
+  border-radius: 40px;
+  width: 200px;
 }
 
 .total-banner {
@@ -98,6 +99,7 @@ export default {
 }
 
 .checkout-btn {
+  border-radius: 40px;
   margin-top: 20px;
   width: 200px;
   display: block;
