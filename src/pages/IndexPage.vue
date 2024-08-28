@@ -6,12 +6,12 @@
     </div>
 
 <div class="container">
-    <div class="row">
-      <div class="col-12">
+
+
         <div class="text-h6 animated-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis voluptas autem consequatur dolorem quod amet, debitis praesentium expedita placeat ipsum, esse magni hic labore iste! Vel hic cupiditate dolorem.
-        </div>
-      </div>
+
+
       <div class="col-12">
         <div class="image-container">
           <img src="src/assets/02_PaulGilbert_0030_C1.jpg" alt="Image 1" class="animated-image">
@@ -105,7 +105,9 @@ export default {};
     }
 
     .animated-text{
+      max-width: 1000px;
       margin-top: 3rem;
+
     }
 
     @keyframes bounceIn {
