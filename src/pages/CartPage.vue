@@ -67,9 +67,9 @@ export default {
 
 .card-content {
   display: flex;
-  flex-direction: row; /* Align items in a row */
-  justify-content: space-between; /* Space out the content and button */
-  align-items: center; /* Align items vertically */
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
   margin-left: 20px;
   width: 90%;
 }
@@ -103,6 +103,6 @@ export default {
   margin-top: 20px;
   width: 200px;
   display: block;
-  margin-left: auto; /* Align to the right */
+  margin-left: auto;
 }
 </style>
