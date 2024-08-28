@@ -1,18 +1,17 @@
 <template>
   <q-page padding>
     <div class="container">
-      <div class="row">
-        <!-- Main product content goes here -->
+        <!-- Main product content -->
       </div>
       
-      <!-- Related Products Section -->
+
       <div class="related-products-section mt-5">
         <h2 class="related-products-title">Related Products</h2>
-        <div class="row justify-content-center">
+        <div class="row">
           <div
             v-for="product in products"
             :key="product.id"
-            class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch"
+            class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4 d-flex align-items-stretch"
           >
             <q-card class="w-100 d-flex flex-column card-custom">
               <q-img :src="product.image" class="card-img-top" />
@@ -21,18 +20,20 @@
                   {{ product.name }}
                 </h2>
                 <h4 class="h4 product-price">{{ product.price }}</h4>
-                <q-btn
-                  @click="goToDetail(product.id)"
-                  color="primary"
-                  label="View Product"
-                  class="view-product-btn"
-                />
+                <div class="text-center mt-4">
+                  <q-btn
+                    @click="goToDetail(product.id)"
+                    color="primary"
+                    label="View Product"
+                    class="view-product-btn"
+                  />
+                </div>
               </q-card-section>
             </q-card>
           </div>
         </div>
       </div>
-    </div>
+
   </q-page>
 </template>
 
@@ -59,24 +60,16 @@ export default {
 </script>
 
 <style>
-.q-page {
-  background: url('src/assets/lespaul.jpg') no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 18px;
   padding-right: 15px;
 }
 
 .card-img-top {
-  height: 450px;
+  height: 700px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
   transition: transform 0.3s ease;
@@ -86,12 +79,14 @@ export default {
   transform: scale(1.05);
 }
 
+
 .q-card {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(252, 11, 11, 0.1);
   border-radius: 8px;
   overflow: hidden;
   background-color: #f8f8f8;
-  margin: 10px;
+  margin: 40px;
 }
 
 .product-name {
@@ -113,14 +108,12 @@ export default {
 }
 
 .view-product-btn {
-  align-self: center;
-  padding: 8px 20px;
   font-size: 0.9rem;
   border-radius: 20px;
   background-color: #1976d2;
   color: #fff;
+  margin-left: -1rem;
 }
-
 .related-products-section {
   margin-top: 50px;
   text-align: center;
@@ -139,6 +132,7 @@ export default {
   .view-product-btn {
     padding: 6px 16px;
     font-size: 0.8rem;
+
   }
 }
 </style>
