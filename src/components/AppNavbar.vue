@@ -3,7 +3,7 @@
     <q-toolbar-title>
       <img
         src="src/assets/Lightbearer Logo 3.png"
-        alt="My E-Commerce Site Logo"
+        alt="Lightbearer Logo"
         class="logo-img"
       />
       LIGHTBEARER STORE
@@ -70,8 +70,8 @@ export default {
 }
 
 .cart-icon {
-  margin-left: 5rem;
-  margin-top: -2rem;
+  margin-left: 0rem;
+  margin-top: 0rem;
 }
 
 </style>
